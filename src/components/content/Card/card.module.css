@@ -1,0 +1,43 @@
+@value blue, white, lightGrey from "../../../styles/variables/colors.css";
+@value tablet from "../../../styles/variables/breakpoints.css";
+
+.card {
+    border-top: 1px solid lightGrey;;
+    max-width: 600px;
+    padding: 20px 0;
+}
+
+.authorContent {
+    padding: 10px;
+}
+
+.imageContent {
+    margin: 0 -10px;
+    max-height: 400px;
+    position: relative;
+    overflow: hidden;
+}
+
+.imageLikes {
+    background: blue;
+    border-radius: 30px 0 0 0;
+    color: white;
+    padding: 20px 5px;
+    bottom: 0;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    width: 120px;
+}
+
+.description {
+    padding: 10px;
+}
+
+@media tablet { 
+
+    .imageContent {
+        margin: 0;
+        border-radius: 18px;
+    }
+}

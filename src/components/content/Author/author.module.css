@@ -1,0 +1,12 @@
+.author {
+    display: flex;
+    align-items: center;
+}
+
+.image {
+    border-radius: 50%;
+    height: 50px;
+    margin: 0 20px 0 0;
+    width: 50px;
+    overflow: hidden;
+}

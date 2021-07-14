@@ -1,0 +1,4 @@
+@value mobile: (max-width: 599px);
+@value tablet: (min-width: 600px);
+@value desktop-small: (min-width: 960px);
+@value desktop: (min-width: 1330px);

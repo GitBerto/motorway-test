@@ -1,0 +1,66 @@
+@value tablet, desktop from "./variables/breakpoints.css";
+@value yellow, black from "./variables/colors.css";
+@value small, large, x-large from "./variables/typography.css";
+
+.header {
+    background: yellow;
+    padding: 10px 20px;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.article {
+    margin: 20px 0;
+}
+
+
+.h1 {
+    font-size: medium;
+    color: black;
+}
+
+.h2 {
+    font-size: medium;
+    text-align: center;
+}
+
+.bodyContent, .asideContent {
+    margin: 20px 0;
+    padding: 10px;
+}
+
+.modalContent {
+    max-width: 1300px;
+}
+
+@media tablet {
+    .h1 {
+        font-size: x-large;
+        text-align: center;
+    }
+
+    .bodyContent {
+        margin: 20px auto;
+        width: 700px;
+    }
+}
+
+@media desktop {
+    .h1 {
+        font-size: xl-large;
+    }
+    .bodyContent {
+        display: flex;
+        width: 1200px;
+    }
+    .mainContent {
+        margin: 0 20px 0 0;
+        width: 100%;
+    }
+    .asideContent {
+        padding: 0 20px;
+        margin: 0 0 0 20px;
+        width: 100%;
+    }
+}
